@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+  background-position: right top, left bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 .cards {
