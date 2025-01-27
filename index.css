@@ -8,10 +8,12 @@
   flex-direction: column;
   align-items: center;
   background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
-  background-position: right top, left bottom; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
 }
-
+h1 {
+  color: #423f3f;
+}
 .cards {
   display: flex;
   margin: 20px;
@@ -47,6 +49,10 @@
 }
 .slider input:checked + .circle {
   transform: translateX(20px);
+  transition: 0.2s;
+}
+.slider input:not(:checked) + .circle {
+  transform: translateX(0);
   transition: 0.2s;
 }
 .circle {
@@ -91,7 +97,7 @@ hr {
 }
 p {
   font-size: 15px;
-  color: #000;
+  color: #423f3f;
   font-family: Montserrat;
   font-weight: 500;
 }
